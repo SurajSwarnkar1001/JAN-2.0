@@ -54,10 +54,9 @@ function speakThis(message) {
     const speech = new SpeechSynthesisUtterance();
 
     // speech.text = "I did not understand what you said please try again";
-    if(message.includes('wave up')){
+    if(message.includes('wake up')){
     wishMe();
-    const finalText = "Please tell me sir, How can I help you ?";
-    speech.text = finalText;
+    speak("Please tell me sir, How can I help you ?");
     }
 
     else if(message.includes('hey') || message.includes('hello')) {
