@@ -56,6 +56,7 @@ function speakThis(message) {
     // speech.text = "I did not understand what you said please try again";
     if(message.includes('wake up')){
     wishMe();
+    speak("Please tell me sir, How can I help you ?");
     }
 
     else if(message.includes('hey') || message.includes('hello')) {
