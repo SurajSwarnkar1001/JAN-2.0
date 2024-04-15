@@ -53,7 +53,7 @@ btn.addEventListener('click', ()=>{
 function speakThis(message) {
     const speech = new SpeechSynthesisUtterance();
 
-    // speech.text = "I did not understand what you said please try again";
+    speech.text = "I did not understand what you said please try again";
     if(message.includes('wake up')){
     wishMe();
     speak("Please tell me, How can I help you?");
