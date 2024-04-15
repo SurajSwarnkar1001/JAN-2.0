@@ -56,19 +56,29 @@ function speakThis(message) {
     // speech.text = "I did not understand what you said please try again";
     if(message.includes('wake up')){
     wishMe();
-    speak("Please tell me sir, How can I help you ?");
+    speak("Please tell me, How can I help you ?");
     }
-
     else if(message.includes('hey') || message.includes('hello')) {
-        const finalText = "Hello sir, How may i help you";
+        const finalText = "Hello, How may i help you";
         speech.text = finalText;
     }
 
     else if(message.includes('how are you')) {
-        const finalText = "I am fine boss tell me how can i help you";
+        const finalText = "I am fine, please tell me how can i help you";
         speech.text = finalText;
     }
-
+    else if(message.includes('i am fine')){
+        speak("that's great sir");
+    }
+    else if(message.includes('and you')){
+        speak("I'm doing well, thank you for asking");
+    }
+    else if(message.includes('thank you')){
+        speak("Glad to help, sir");
+    }
+    else if(message.include('you know who i am')){
+        speak("it's a suraj account, yes i am talking to suraj")
+    }
     else if(message.includes('i am tired')){
         speak("ok, can i playing your favourite song, sir");
         const a = Math.floor(Math.random()*(4-1))+1;
