@@ -33,7 +33,7 @@ function wishMe() {
 
 window.addEventListener('load', ()=>{
     speak("Activating the JAN 2.0");
-    speak("I am your virtual personal assistace");
+    speak("I am your virtual personal assistance");
 })
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -56,7 +56,7 @@ function speakThis(message) {
     // speech.text = "I did not understand what you said please try again";
     if(message.includes('wake up')){
     wishMe();
-    speak("Please tell me, How can I help you ?");
+    speak("Please tell me, How can I help you?");
     }
     else if(message.includes('hey') || message.includes('hello')) {
         const finalText = "Hello sir, How may i help you";
