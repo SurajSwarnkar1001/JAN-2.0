@@ -67,11 +67,18 @@ function speakThis(message) {
         const finalText = "I am fine, tell me how can i help you";
         speech.text = finalText;
     }
-    else if(message.includes('name')) {
+     else if(message.includes('and you')) {
+        const finalText = "I'm doing well, thank you for asking";
+        speech.text = finalText;
+    }
+    else if(message.includes('whats your name')) {
         const finalText = "My name is JAN, I'm your Personal Assistant";
         speech.text = finalText;
     }
-
+    else if(message.includes('your inventor')){
+        const finalText = "I was created by Mr. Suraj Swarnkar";
+        speech.text = finalText;
+    }
     else if(message.includes('open google')) {
         window.open("https://google.com", "_blank");
         const finalText = "Opening Google";
@@ -85,6 +92,11 @@ function speakThis(message) {
     else if(message.includes('open Linkedin')) {
         window.open("https://www.linkedin.com", "_blank");
         const finalText = "Opening Linkedin";
+        speech.text = finalText;
+    }
+         else if(message.include('open youtube')){
+        window.open("https://www.youtube.com/", "_blank");
+        const finalText = "Opening youtube";
         speech.text = finalText;
     }
     else if(message.includes('what is') || message.includes('who is') || message.includes('what are')) {
