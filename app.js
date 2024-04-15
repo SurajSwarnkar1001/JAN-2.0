@@ -59,7 +59,7 @@ function speakThis(message) {
     speak("Please tell me, How can I help you ?");
     }
     else if(message.includes('hey') || message.includes('hello')) {
-        const finalText = "Hello, How may i help you";
+        const finalText = "Hello sir, How may i help you";
         speech.text = finalText;
     }
 
