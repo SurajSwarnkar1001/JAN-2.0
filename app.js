@@ -72,25 +72,30 @@ function speakThis(message) {
         const finalText = "My name is JAN, I'm your Personal Assistant";
         speech.text = finalText;
     }
-
+// open google
     else if(message.includes('open google')) {
         window.open("https://google.com", "_blank");
         const finalText = "Opening Google";
         speech.text = finalText;
     }
-
+// open instagram
     else if(message.includes('open instagram')) {
         window.open("https://instagram.com", "_blank");
         const finalText = "Opening instagram";
         speech.text = finalText;
     }
-
+        // open linkedin
+    else if(message.includes('open Linkedin')) {
+        window.open("https://www.linkedin.com", "_blank");
+        const finalText = "Opening Linkedin";
+        speech.text = finalText;
+        
     else if(message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what i found on internet regarding " + message;
         speech.text = finalText;
     }
-
+   //  wikipedia
     else if(message.includes('wikipedia')) {
         window.open(`https://en.wikipedia.org/wiki/${message.replace("wikipedia", "")}`, "_blank");
         const finalText = "This is what i found on wikipedia regarding " + message;
@@ -108,12 +113,13 @@ function speakThis(message) {
         const finalText = date;
         speech.text = finalText;
     }
-
+// open calculator
     else if(message.includes('open calculator')) {
         window.open('https://calculator.apps.chrome/')
         const finalText = "Opening Calculator";
         speech.text = finalText;
     }
+        
 
     else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
