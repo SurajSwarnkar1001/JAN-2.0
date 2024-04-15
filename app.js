@@ -72,7 +72,7 @@ function speakThis(message) {
 
     else if(message.includes('i am tired')){
         speak("ok, can i playing your favourite song, sir");
-        let a = (1,2,3,4)
+        const a = Math.floor(Math.random()*(4-1))+1;
         const b = random.choice(a)
         if(b==1){
             webbrowser.open("https://www.youtube.com/watch?v=AHAl1R2YIr0&ab_channel=ForTheRecordMusic")
