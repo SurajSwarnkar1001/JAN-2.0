@@ -53,22 +53,22 @@ btn.addEventListener('click', ()=>{
 function speakThis(message) {
     const speech = new SpeechSynthesisUtterance();
 
-    speech.text = "I did not understand what you said please try again";
-    if(message.includes('wave up')){
+    // speech.text = "I did not understand what you said please try again";
+    if(message.includes('wake up')){
     wishMe();
     }
 
-    else if(message.includes('hey jan') || message.includes('hello jan')) {
+    else if(message.includes('hey') || message.includes('hello')) {
         const finalText = "Hello sir, How may i help you";
         speech.text = finalText;
     }
 
-    else if(message.includes('how are you jan')) {
+    else if(message.includes('how are you')) {
         const finalText = "I am fine boss tell me how can i help you";
         speech.text = finalText;
     }
 
-    else if(message.includes('i am tired jan')){
+    else if(message.includes('i am tired')){
         speak("ok, can i playing your favourite song, sir");
         let a = (1,2,3,4)
         const b = random.choice(a)
@@ -87,12 +87,12 @@ function speakThis(message) {
         }
     }
 
-    else if(message.includes('what is your name jan')) {
+    else if(message.includes('your name')) {
         const finalText = "My name is JAN";
         speech.text = finalText;
     }
-    else if(message.includes('jan who is your inventor')){
-        const finalText = "Suraj Swarnkar is my inventor"
+    else if(message.includes('your inventor')){
+        const finalText = "Suraj sir is my inventor";
         speech.text = finalText;
     }
 
